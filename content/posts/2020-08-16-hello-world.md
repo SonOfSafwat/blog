@@ -9,4 +9,4 @@ category: general
 tags:
   - genenral
 ---
-Hello World
+![Hello World](/media/hello-world.png)
