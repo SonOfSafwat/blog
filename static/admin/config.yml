@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: SonOfSafwat/personal-blog
+  branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
