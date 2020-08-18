@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: SonOfSafwat/blog
+  name: git-gateway
+  branch: master
 
 media_folder: 'static/media'
 public_folder: '/media'
