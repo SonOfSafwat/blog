@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'http://localhost:8000',
+  url: 'http://abdelrhmansafwat.com',
   pathPrefix: '/',
   title: 'Blog by Abdelrhman Safwat',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 5,
+  googleAnalyticsId: 'UA-175696103-1',
   useKatex: true,
   menu: [
     {
@@ -16,18 +16,18 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'Tags',
+      path: '/tags/'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Categories',
+      path: '/categories'
     }
   ],
   author: {
     name: 'Abdelrhman Safwat',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: '',
     contacts: {
       email: 'abdelrhman.safwat@gmail.com',
       facebook: '',
