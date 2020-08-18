@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: SonOfSafwat/personal-blog
+  repo: SonOfSafwat/blog
   branch: release
 
 
