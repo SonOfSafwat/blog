@@ -1,8 +1,6 @@
 backend:
   name: github
   repo: SonOfSafwat/blog
-  branch: release
-
 
 media_folder: 'static/media'
 public_folder: '/media'
