@@ -2,19 +2,14 @@ backend:
   name: github
   repo: SonOfSafwat/personal-blog
   branch: release
-  commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+
 
 media_folder: 'static/media'
 public_folder: '/media'
 
 # Uncomment to leverage Netlify CMS UI authoring flow
 # see: https://www.netlifycms.org/docs/configuration-options/#publish-mode
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 collections:
   - name: "posts"
