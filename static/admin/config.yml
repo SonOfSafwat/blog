@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: SonOfSafwat/blog
-  branch: gh-pages
   api_root: https://api.github.com
   site_domain: abdelrhmansafwat.com
   base_url: https://api.netlify.com
