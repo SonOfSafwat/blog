@@ -4,7 +4,7 @@ title: Regex Cheatsheet
 slug: regesx-cheat-sheet
 draft: true
 date: 2020-08-19T10:04:20.177Z
-description: My go to Regex cheat sheet to help me reading other people regular expressions
+description: "Go to Regex cheat sheet to help me reading other people regular expressions "
 category: Regular Expressions
 tags:
   - regex
