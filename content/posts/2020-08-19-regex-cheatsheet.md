@@ -8,7 +8,7 @@ description: "Go to Regex cheat sheet to help me reading other people regular ex
 category: Regular Expressions
 tags:
   - regex
-  - programming
+  - regular expressions
 ---
 ## Ranges
 
