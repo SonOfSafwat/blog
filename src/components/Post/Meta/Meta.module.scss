@@ -2,8 +2,17 @@
 @import '../../../assets/scss/mixins';
 
 .meta {
-  &__date {
-    font-style: italic;
-  }
-
+	border-top: 1px solid $color-base;
+	max-width: $layout-post-width;
+	padding-top: 20px;
+	@include line-height(1);
+	@include margin-top(1);
+	@include margin-bottom(2);
+	font-style: italic;
+	&__date {
+		font-style: italic;
+		&-twitter {
+			text-decoration: underline;
+		}
+	}
 }
