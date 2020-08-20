@@ -183,7 +183,7 @@ module.exports = {
 				background_color: '#FFF',
 				theme_color: '#F7A046',
 				display: 'standalone',
-				icon: 'static/photo.jpg',
+				icon: 'static/avatar.png',
 			},
 		},
 		'gatsby-plugin-offline',
@@ -203,8 +203,8 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
-				host: 'https://abdelrhmansafwat.com',
-				sitemap: 'https://abdelrhman.com/sitemap.xml',
+				host: siteConfig.url,
+				sitemap: `${siteConfig.url}/sitemap.xml`,
 				policy: [{ userAgent: '*', allow: '/' }],
 			},
 		},

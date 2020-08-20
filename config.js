@@ -3,8 +3,8 @@
 module.exports = {
 	url: 'https://abdelrhmansafwat.com',
 	pathPrefix: '/',
-	title: 'Blog by Abdelrhman Safwat',
-	subtitle: '',
+	title: 'Abdelrhman Safwat',
+	subtitle: 'Blog',
 	copyright: '© All rights reserved.',
 	disqusShortname: '',
 	postsPerPage: 5,
@@ -26,7 +26,7 @@ module.exports = {
 	],
 	author: {
 		name: 'Abdelrhman Safwat',
-		photo: '/photo.jpg',
+		photo: '/avatar.png',
 		bio: '',
 		contacts: {
 			email: 'abdelrhman.safwat@gmail.com',
