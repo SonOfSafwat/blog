@@ -2,7 +2,6 @@
 	"version": "0.0.0",
 	"name": "abdelrhman-safwat-blog",
 	"description": "Abdelrhman Safwat personal blog",
-	"main": "n/a",
 	"scripts": {
 		"develop": "yarn run clean && gatsby develop",
 		"build": "yarn run clean && gatsby build",
@@ -21,17 +20,11 @@
 	"license": "MIT",
 	"keywords": [
 		"gatsby",
-		"graphql",
-		"netlify",
 		"netlify-cms",
-		"pagination",
-		"categories",
-		"tags",
-		"prismjs",
-		"static",
-		"lost",
+		"abdlerhman",
+		"sonofsafwat",
+		"safwat",
 		"blog",
-		"minimal",
 		"react"
 	],
 	"dependencies": {
@@ -75,7 +68,8 @@
 		"react": "^16.13.1",
 		"react-disqus-comments": "^1.4.0",
 		"react-dom": "^16.13.1",
-		"react-helmet": "^6.1.0"
+		"react-helmet": "^6.1.0",
+		"react-share": "3.0.1"
 	},
 	"devDependencies": {
 		"@babel/core": "7.10.5",
@@ -100,6 +94,8 @@
 		"eslint-plugin-jsx-a11y": "6.3.1",
 		"eslint-plugin-react": "^7.20.6",
 		"eslint-watch": "7.0.0",
+		"flow-bin": "^0.131.0",
+		"flow-typed": "^3.2.1",
 		"gh-pages": "3.1.0",
 		"identity-obj-proxy": "3.0.0",
 		"jest": "26.2.1",
