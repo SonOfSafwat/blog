@@ -200,5 +200,13 @@ module.exports = {
 		},
 		'gatsby-plugin-flow',
 		'gatsby-plugin-optimize-svgs',
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://abdelrhmansafwat.com',
+				sitemap: 'https://abdelrhman.com/sitemap.xml',
+				policy: [{ userAgent: '*', allow: '/' }],
+			},
+		},
 	],
 };
