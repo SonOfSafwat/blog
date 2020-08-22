@@ -2,5 +2,11 @@
 @import '../../assets/scss/mixins';
 
 .layout {
-    lost-center: $layout-width;
+	lost-center: $layout-width;
+}
+
+@include breakpoint-lg {
+	.layout {
+		@include margin-top(1);
+	}
 }
