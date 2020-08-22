@@ -2,12 +2,13 @@
 @import '../../../assets/scss/mixins';
 
 .meta {
-	border-top: 1px solid $color-base;
+	text-align: center;
+	//	border-top: 1px solid $color-base;
 	max-width: $layout-post-width;
-	padding-top: 20px;
-	@include line-height(1);
-	@include margin-top(1);
-	@include margin-bottom(2);
+	//	padding-top: 20px;
+	//	@include line-height(0);
+	//	@include margin-top(1);
+	//	@include margin-bottom(0);
 	font-style: italic;
 	&__date {
 		font-style: italic;

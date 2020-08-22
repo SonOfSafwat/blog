@@ -25,13 +25,12 @@ const Post = ({ post }: Props) => {
 			</Link>
 
 			<div className={styles['post__content']}>
-				<Content body={html} title={title} />
+				<Content body={html} title={title} date={date} />
 			</div>
 
 			<div className={styles['post__footer']}>
-				<Meta date={date} />
-				{tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
 				<Share title={title} />
+				{tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
 			</div>
 
 			<div className={styles['post__comments']}>
