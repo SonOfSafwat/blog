@@ -9,4 +9,4 @@ category: github actions
 tags:
   - github
 ---
-github actions
+github actions test
