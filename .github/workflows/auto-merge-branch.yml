@@ -27,4 +27,5 @@ jobs:
           env:
             GITHUB_TOKEN: "${{ secrets.AUTO_MERGE_TOKEN }}"
             MERGE_COMMIT_MESSAGE: "pull-request-title-and-description"
+            MERGE_LABELS: "netlify-cms/*,netlify-cms/draft, netlify-cms/pending_publish"
  
