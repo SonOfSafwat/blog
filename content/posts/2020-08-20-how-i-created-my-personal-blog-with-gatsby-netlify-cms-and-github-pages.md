@@ -13,3 +13,8 @@ tags:
   - Netlify-CMS
 ---
 # My Journey Creating a personal Blog
+
+I built my blog for 2 main reasons:
+
+1. As a programming exercise 
+2. To own all my articles and information
