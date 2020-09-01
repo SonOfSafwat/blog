@@ -28,4 +28,5 @@ jobs:
             GITHUB_TOKEN: "${{ secrets.AUTO_MERGE_TOKEN }}"
             MERGE_COMMIT_MESSAGE: "pull-request-title-and-description"
             MERGE_LABELS: "netlify-cms/draft"
+            MERGE_DELETE_BRANCH: true
  
