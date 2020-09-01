@@ -1,2 +1,2 @@
 automerge:
-- any: ['content/**/*']
+- content/**/*
