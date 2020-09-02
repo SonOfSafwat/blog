@@ -31,8 +31,8 @@ jobs:
     steps:
      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
      - uses: actions/checkout@v2
-     
-     - uses: actions/setup-node@v2
+     # use node version 12.x
+     - uses: actions/setup-node@v1
        with:
         node-version: '12.x'
         check-latest: true
@@ -41,24 +41,29 @@ jobs:
        id: yarn-cache-dir-path
        run: echo "::set-output name=dir::$(yarn cache dir)"
 
-     - run: yarn install
-
      - uses: actions/cache@v2
        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
        with:
-         path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+         path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            !~/cache
+            !~/public
+            **/node_modules
          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
          restore-keys: |
                 ${{ runner.os }}-yarn-
-  # deploy job
-  deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - name: Deploy
-           run: yarn run deploy
+                
+     - name: install yarn packages
+       if: steps.yarn-cache.outputs.cache-hit != 'true'
+       run: yarn install
+
+     - name: Deploy
+       run: yarn run deploy
+     
   # auto merge job
   automerge:
       runs-on: ubuntu-latest
+      needs: build
       steps:
         - name: Merge pull requests
           uses: pascalgn/automerge-action@v0.9.0
