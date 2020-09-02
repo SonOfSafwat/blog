@@ -46,7 +46,7 @@ backend:
 
 Second step was to update `package.json` with my information instead of the creators' information. 
 
-Third item was deployment, the template uses `gh-pages` library to deploy releases. by default `gh-pages` creates a new branch with the same nameand push the site to it, if you wish to change that you can use this simple script, it replaces the default branch name with `release` instead of `gh-pages`.
+Third item was deployment, the template uses `gh-pages` library to deploy releases. by default `gh-pages` creates a new branch with the same name and push the site to it, if you wish to change that you can use this simple script, it replaces the default branch name with `release` instead of `gh-pages`.
 
 ```javascript
 const ghpages = require('gh-pages');
