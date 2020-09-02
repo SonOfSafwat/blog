@@ -54,7 +54,7 @@ jobs:
        run: yarn install
 
      - name: Deploy
-       run: yarn run deploy
+       run: gatsby build --prefix-paths && node ./scripts/github-deploy
      
   # auto merge job
   automerge:
