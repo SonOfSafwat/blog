@@ -17,7 +17,6 @@ jobs:
   # auto merge job
   automerge-draft:
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Merge pull requests
         uses: pascalgn/automerge-action@v0.9.0
@@ -28,7 +27,6 @@ jobs:
           MERGE_DELETE_BRANCH: true
   automerge-pending_publish:
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Merge pull requests
         uses: pascalgn/automerge-action@v0.9.0
