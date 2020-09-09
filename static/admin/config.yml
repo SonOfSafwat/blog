@@ -1,10 +1,15 @@
 backend:
   name: github
   repo: SonOfSafwat/blog
+  branch: release
   api_root: https://api.github.com
   site_domain: abdelrhmansafwat.com
   base_url: https://api.netlify.com
   auth_endpoint: auth
+
+site_url: https://abdelrhmansafwat.com
+display_url: abdelrhmansafwat.com
+show_preview_links: true
 
 media_folder: 'static/media'
 public_folder: '/media'
