@@ -35,7 +35,7 @@ console.log(doubleMap([2, 3, 4])); // [4, 6, 8]
 ```
 
 
----
+
 
 
 This **declarative** mapping does the same thing, but abstracts the flow control away using the functional `Array.prototype.map()` utility, which allows you to more clearly express the flow of data:
@@ -45,6 +45,8 @@ const doubleMap = numbers => numbers.map(n => n * 2);
 
 console.log(doubleMap([2, 3, 4])); // [4, 6, 8]
 ```
+
+
 
 **Imperative** code frequently utilizes statements. A **statement** is a piece of code which performs some action. Examples of commonly used statements include `for`, `if`, `switch`, `throw`, etc…
 
