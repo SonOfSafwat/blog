@@ -1,11 +1,23 @@
 backend:
-  name: github
+  name: git-gateway
   repo: SonOfSafwat/blog
   branch: release
   api_root: https://api.github.com
   site_domain: abdelrhmansafwat.com
   base_url: https://api.netlify.com
   auth_endpoint: auth
+  cms_label_prefix: netlify-cms/
+  preview_context: my-provider/deployment
+
+commit_messages:
+  create: Create {{collection}} “{{slug}}”
+  update: Update {{collection}} “{{slug}}”
+  delete: Delete {{collection}} “{{slug}}”
+  uploadMedia: Upload “{{path}}”
+  deleteMedia: Delete “{{path}}”
+  openAuthoring: '{{message}}'
+
+local_backend: true
 
 site_url: https://abdelrhmansafwat.com
 display_url: abdelrhmansafwat.com
@@ -26,7 +38,7 @@ collections:
     folder: 'content/posts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: 'posts/{{fields.slug}}'
+    preview_path: 'posts/{{slug}}'
     fields:
       - {
           label: 'Template',
@@ -48,6 +60,7 @@ collections:
     folder: 'content/pages'
     create: true
     slug: '{{slug}}'
+    preview_path: 'posts/{{slug}}'
     fields:
       - {
           label: 'Template',
