@@ -34,10 +34,6 @@ const doubleMap = numbers => {
 console.log(doubleMap([2, 3, 4])); // [4, 6, 8]
 ```
 
-
-
-
-
 This **declarative** mapping does the same thing, but abstracts the flow control away using the functional `Array.prototype.map()` utility, which allows you to more clearly express the flow of data:
 
 ```javascript
