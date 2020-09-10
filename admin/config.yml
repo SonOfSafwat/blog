@@ -1,13 +1,11 @@
 backend:
   name: github
   repo: SonOfSafwat/blog
-  branch: release
   api_root: https://api.github.com
   site_domain: abdelrhmansafwat.com
   base_url: https://api.netlify.com
   auth_endpoint: auth
   cms_label_prefix: netlify-cms/
-  preview_context: my-provider/deployment
 
 commit_messages:
   create: Create {{collection}} “{{slug}}”
