@@ -4,7 +4,7 @@
 	"description": "Abdelrhman Safwat personal blog",
 	"scripts": {
 		"develop": "yarn run clean && gatsby develop",
-		"build": "yarn run clean && gatsby build",
+		"build": "yarn run clean && gatsby build --prefix-paths",
 		"deploy": "yarn run clean && gatsby build --prefix-paths && node ./scripts/github-deploy",
 		"clean": "rimraf .cache public",
 		"flow": "flow",
