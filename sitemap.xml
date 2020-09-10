@@ -3,9 +3,10 @@
 <url> <loc>https://abdelrhmansafwat.com/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/posts/hello-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://abdelrhmansafwat.com/posts/regesx-cheat-sheet</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/posts/create-blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://abdelrhmansafwat.com/posts/regesx-cheat-sheet</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/posts/declarative-and-imperative-programming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://abdelrhmansafwat.com/posts/test</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/tag/hello-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/tag/code-bites</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/tag/functional-programming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -17,9 +18,11 @@
 <url> <loc>https://abdelrhmansafwat.com/tag/netlify-cms</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/tag/regex</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/tag/regular-expression</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://abdelrhmansafwat.com/tag/test</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/category/hello-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/category/regular-expressions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/category/side-quests</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/category/today-i-learned</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://abdelrhmansafwat.com/category/test</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://abdelrhmansafwat.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
