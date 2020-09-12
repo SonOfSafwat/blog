@@ -18,16 +18,11 @@ commit_messages:
 local_backend: true
 
 site_url: https://abdelrhmansafwat.com
-display_url: abdelrhmansafwat.com
 logo_url: https://abdelrhmansafwat.com/avatar.png
-
-show_preview_links: true
 
 media_folder: 'static/media'
 public_folder: '/media'
 
-# Uncomment to leverage Netlify CMS UI authoring flow
-# see: https://www.netlifycms.org/docs/configuration-options/#publish-mode
 publish_mode: editorial_workflow
 
 collections:
@@ -35,8 +30,8 @@ collections:
     label: 'Posts'
     folder: 'content/posts'
     create: true
+    preview_path: 'posts/{{fields.slug}}'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: 'posts/{{slug}}'
     fields:
       - {
           label: 'Template',
@@ -58,7 +53,7 @@ collections:
     folder: 'content/pages'
     create: true
     slug: '{{slug}}'
-    preview_path: 'posts/{{slug}}'
+    preview_path: 'pages/{{slug}}'
     fields:
       - {
           label: 'Template',
