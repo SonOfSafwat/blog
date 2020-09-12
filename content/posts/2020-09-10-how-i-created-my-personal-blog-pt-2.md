@@ -35,9 +35,7 @@ One major cause of confusion is that if you have a published version of the blog
 
 #### You Can't login to admin UI of the CMS
 
-One thing that I saw faced a lot of people with integrating Netlify-CMS authentication with Github. According to a lot of people you need to create a Netlify account, link the repo to Netlify, and then add Github as authentication provider. What most people fail to mention is that also registers Netlify as a build server for your repo, in short you only use Github as vcs/hosting provider. 
-
-I didn't want to depend on Netlify, and after a lot of searching and experimenting this formula worked for me, setting the following values in `config.yml`
+One thing that I saw faced a lot of people was correctly integrating Netlify-CMS authentication with Github. You need to create an account on [app.netlify.com](app.netlify.com), link your Github repo to Netlify; make sure to disable builds if you don't wish to use Netlify as a build server; then move to Site Settings under access control install a provider using a generated Github client id/secret. 
 
 ```yaml
 backend:
@@ -48,5 +46,5 @@ backend:
   base_url: https://api.netlify.com
   auth_endpoint: auth
 ```
-Using this configuration you can login to the blog admin UI using Github authentication without the need for Netlify. 
 
+Using this configuration you can login to the blog admin UI using Github authentication without the need for Netlify.
