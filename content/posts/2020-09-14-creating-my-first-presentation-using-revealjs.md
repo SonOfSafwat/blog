@@ -1,6 +1,6 @@
 ---
 template: post
-title: Creating my first presentation using RevealJS
+title: Package your RevealJS
 slug: using-reveal-js
 draft: false
 date: 2020-09-14T08:04:09.597Z
