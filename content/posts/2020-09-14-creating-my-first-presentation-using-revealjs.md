@@ -21,3 +21,5 @@ A couple of things made me put my mind to it
 As mentioned in the documentation the best way to install and use the framework is by cloning the repo using this command 
 `$ git clone https://github.com/hakimel/reveal.js.git`
 The nice thing about cloning the whole repo is that you get a complete examples folders showcasing the features and a demo presentation which I considered RevealJS Holy Grail, I would lie if I didn't say that my whole presentation styles is copied from the demo presentation. 
+RevealJS uses [gulp](https://gulpjs.com/) for building and developing.
+One hidden feature I stumbled upon while going through the gulpfile was a task called `package` where you can build and package your presentation and voila it's ready for publishing. sadly when I tried it out, it didn't work as expected so I had to make a few changes. The thing is it captures all the framework files and your index.html; which contains your presentation; and creates a packaged zip file ready for publishing. If you try the published version you will find out it's broken and that's because all the references inside your index.html don't point to the correct locations, 
