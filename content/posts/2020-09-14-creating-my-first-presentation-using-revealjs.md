@@ -57,4 +57,4 @@ gulp.task(
 ```
 I also included a couple more folders where I organized my files.
 
-Now the last thing to do is to update the package.json file to include a package script by adding the line `"package": "gulp package"` and run the command `npm run package` after the task is finished you will find a zip file called reveal-js-presentation.zip created containing your presentation and ready for publishing anywhere.  
+Now the last thing to do is to update the package.json file to include a package script by adding the line `"package": "gulp package"` and run the command `npm run package` after the task is finished you will find a zip file called `reveal-js-presentation.zip` created containing your presentation and ready for publishing anywhere.  
