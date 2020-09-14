@@ -5,7 +5,7 @@ slug: package-revealjs
 draft: false
 date: 2020-09-14T08:04:09.597Z
 description: Notes and lessons learned from creating my first presentation with RevealJS
-category: Today I learned
+category: Today I Learned
 tags:
   - revealjs
   - talk
