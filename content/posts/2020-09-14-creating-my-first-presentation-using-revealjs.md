@@ -1,7 +1,7 @@
 ---
 template: post
-title: Package your RevealJS
-slug: using-reveal-js
+title: How to package and publish your RevealJS presentation
+slug: package-revealjs
 draft: false
 date: 2020-09-14T08:04:09.597Z
 description: Notes and lessons learned from creating my first presentation with RevealJS
