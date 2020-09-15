@@ -13,8 +13,7 @@
     "lint": "concurrently \"yarn run lint:js\" \"yarn run lint:scss\" \"yarn flow\"",
     "test": "jest --config ./jest/jest-config.js",
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
-    "test:watch": "jest --watch --config ./jest/jest-config.js",
-    "commit": "cz"
+    "test:watch": "jest --watch --config ./jest/jest-config.js"
   },
   "repository": "https://github.com/SonOfSafwat/blog",
   "author": "Abdelrhman Safwat <abdelrhman.sfawat@gmail.com>",
@@ -109,6 +108,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "26.2.1",
     "jest-cli": "26.2.1",
+    "lint-staged": ">=10",
     "lost": "8.3.1",
     "postcss-pxtorem": "5.1.1",
     "prettier": "^2.0.5",
@@ -126,7 +126,18 @@
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*.{js,css,md}": "prettier --write",
+    "*.scss": [
+      "postcss --config postcss-config.js --replace",
+      "stylelint --fix"
+    ],
+    "*.{js,jsx}": "flow focus-check"
   }
 }
